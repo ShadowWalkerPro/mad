@@ -1,0 +1,21 @@
+.Chat{
+    background: white;
+    height: 800px;
+    width: 1000px;
+    position: absolute;
+    left: 470px;
+}
+.Contacts{
+    background: white;
+    height: 800px;
+    width: 400px;
+    position: absolute;
+    left: 50px;
+}
+.Search{
+    background: white;
+    position: relative;
+    width: 1420px;
+    right: 200px;
+    margin-bottom: 10px;
+}

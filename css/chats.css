@@ -1,21 +1,71 @@
-.Chat{
-    background: white;
-    height: 800px;
-    width: 1000px;
-    position: absolute;
-    left: 470px;
+
+* {
+    box-sizing: border-box;
 }
-.Contacts{
-    background: white;
-    height: 800px;
-    width: 400px;
-    position: absolute;
-    left: 50px;
+
+body {
+  margin: 0;
 }
-.Search{
-    background: white;
-    position: relative;
-    width: 1420px;
-    right: 200px;
-    margin-bottom: 10px;
+/* Style the top navigation bar */
+.Searchbar {
+    overflow: hidden;
+    height: 6%;
+    margin: 1%;
+    font-size: 20px;
+    background: #b96f00;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #cccccc;
+    width: 98%;
+    border: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.Ueberschrift{
+    font-size: 20px;
+    font-family: Impact;
+}
+/* Create two equal columns that floats next to each other */
+.Contacts {
+    float: left;
+    width: 27%;
+    height: 88%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    background: #ff9900;
+        background: -webkit-linear-gradient(top, #663300, #ff9900);
+        background: -o-linear-gradient(top, #663300, #ff9900);
+        background: -moz-linear-gradient(top, #663300, #ff9900);
+        background: linear-gradient(top, #663300, #ff9900);
+}
+.Chat {
+    float: left;
+    width: 70%;
+    height: 88%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    background: #ff9900;
+        background: -webkit-linear-gradient(top, #663300, #ff9900);
+        background: -o-linear-gradient(top, #663300, #ff9900);
+        background: -moz-linear-gradient(top, #663300, #ff9900);
+        background: linear-gradient(top, #663300, #ff9900);
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .Contacts {
+        width: 100%;
+    }
+    .Chat {
+        width: 100%;
+    }
 }

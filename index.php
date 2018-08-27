@@ -10,22 +10,21 @@
         <meta name="keywords" content="Messenger, Mad">
         <meta name="author" content="Roman Shchekotov, Jakob Weiss">
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/checkUserPass.js"></script>
     </head>
 
     <body background="image/index.jpg">
         <center>
-        <form id="SignupForm" class="SignupForm" align="middle" method="POST">
-            <div id="Title_Signup" class="Title_Signup">Mad Signup</div>
-            <input id="Mail" class="Mail" placeholder = "E-Mail"></input>
+        <form id="Form" class="Form" align="middle" method="POST">
+            <div id="Title" class="Title">Mad Login</div>
             <input id="User" class="User" placeholder = "Username"></input>
             <input id="Password" class="Password" placeholder = "Password"></input>
-            <input id="Repeat" class="Repeat" placeholder = "Repeat Password"></input>
-            <button id="Signup" class="Signup">Sign up</button>
-            <div id="Login" class="Login">Already have an account?
-                    <a href="index.php" id="Login" class="Login">Log in!</a>
+            <button id="Submit" class="Submit" onclick="checkUserPass()">Submit</button>
+            <div id="Signup1" class="Login">Don't have an account?
+                <a href="signup.html" id="Signup1" class="Signup1">Sign up!</a>
             </div>
         </form>
       </center>
     </body>
-</html>
 
+</html>
